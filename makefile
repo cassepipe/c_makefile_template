@@ -18,8 +18,7 @@ endif
 CFLAGS		+=	$(ADRESS_SANITIZER) 
 # CFLAGS		+=	-DNDEBUG
 
-LDFLAGS		+=	$(ADRESS_SANITIZER) 
-LDLIBS = -lasan
+LDFLAGS		+=	$(ADRESS_SANITIZER)
 
 SRC/SOURCES  = $(wildcard src/*.c)
 OBJ/OBJECTS	= $(patsubst src/%.c, obj/%.o, $(SRC/SOURCES))
